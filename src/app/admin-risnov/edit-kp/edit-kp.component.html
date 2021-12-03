@@ -1,0 +1,141 @@
+<div class="container-scroller bg-light">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+            <div class="me-3">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-bs-toggle="minimize">
+                    <span class="icon-menu"></span>
+                </button>
+            </div>
+            <div>
+
+                <img src="../../../assets/logo/logo bpjs-01.png" alt="logo" width="120%" />
+
+            </div>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-top">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
+                    <h1 class="welcome-text">Welcome, <span class="text-black fw-bold">John Doe</span></h1>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+                    <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="img-xs rounded-circle" src="../../../assets/images/profile/profile.svg"
+                            alt="Profile image"> </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                        <div class="dropdown-header text-center">
+                            <img class="img-md rounded-circle" src="../../../assets/images/profile/profile.svg"
+                                alt="Profile image" width="30%">
+                            <p class="mb-1 mt-3 font-weight-semibold">Sari XXX</p>
+                            <p class="fw-light text-muted mb-0">sari@gmail.com</p>
+                            <p class="fw-light text-muted mb-0">coorporat university</p>
+                        </div>
+                        <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign
+                            Out</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                data-bs-toggle="offcanvas">
+                <span class="mdi mdi-menu"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper ">
+        <!-- partial -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
+                            aria-controls="form-elements">
+                            <i class="menu-icon mdi mdi-card-text-outline"></i>
+                            <span class="menu-title"><a routerLink="/admin-risnov/home"
+                                    style="text-decoration: none;">Beranda</a></span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                                                                        <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false"
+                                                                            aria-controls="tables">
+                                                                            <i class="menu-icon mdi mdi-table"></i>
+                                                                            <span class="menu-title">Program Andalan</span>
+                                                                            <i class="menu-arrow"></i>
+                                                                        </a>
+                                                                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                            <i class="menu-icon mdi mdi-layers-outline"></i>
+                            <span class="menu-title"><a routerLink="/admin-risnov/proyek-pengembangan"
+                                    style="text-decoration: none;">Proyek Pengembangan</a></span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#opl" aria-expanded="false" aria-controls="opl">
+                            <i class="menu-icon mdi mdi-layers-outline"></i>
+                            <span class="menu-title">One Point Lesson</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="opl">
+                            <ul class="nav flex-column sub-menu">
+                                <!-- <li class="nav-item"> <a class="nav-link" href="#">Data OPL</a></li> -->
+                                <li class="nav-item"> <a class="nav-link" routerLink="/admin-risnov/opl">Data OPL</a></li>
+                                <li class="nav-item"> <a class="nav-link" routerLink="/admin-risnov/sp">Sumber Pengetahuan</a></li>
+                                <li class="nav-item"> <a class="nav-link" routerLink="/admin-risnov/kp">Kategori Pengetahuan</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel" style="border: none;">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb" style="border: none;">
+                                <li class="breadcrumb-item"><a routerLink="/admin-risnov/home">Admin-risnov</a></li>
+                                <li class="breadcrumb-item"><a routerLink="/admin-risnov/opl">one-point-lesson</a></li>
+                                <li class="breadcrumb-item"><a routerLink="/admin-risnov/kp">kategori-pengetahuan</a></li>
+                                <li class="breadcrumb-item"><a routerLink="/admin-risnov/edit-kp">Edit-kategori-pengetahuan</a></li>
+                            </ol>
+                        </nav>
+                        <div class="col-12 mt-0 grid-margin stretch-card" style="border: none;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="forms-sample">
+
+                                        <div class="form-group">
+                                            <label for="exampleTextArea1">Judul Sumber Kategori Pengetahuan : </label>
+                                            <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                                style="height: 4rem;"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- content-wrapper ends -->
+                        <!-- partial:partials/_footer.html -->
+                        <footer class="footer">
+                            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+
+                                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright
+                                    © 2021.
+                                    All
+                                    rights reserved.</span>
+                            </div>
+                        </footer>
+                        <!-- partial -->
+                    </div>
+                    <!-- main-panel ends -->
+                </div>
+                <!-- page-body-wrapper ends -->
+            </div>

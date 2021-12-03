@@ -1,0 +1,42 @@
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex align-items-center auth px-0">
+                <div class="row w-100 mx-0">
+                    <div class="col-lg-4 mx-auto">
+                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+                            <div class="logo ">
+                                <img src="../../assets/logo/logo bpjs-01.png" alt="logo" width="100%">
+                            </div>
+                           
+                            <form class="pt-3">
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                                    placeholder="Npp"
+                                    (input)="npp = $event.target.value">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="password" class="form-control form-control-lg"
+                                        id="exampleInputPassword1" placeholder="Password"
+                                        (input)="password = $event.target.value">
+                                </div>
+                                <div class="my-2 d-flex justify-content-between align-items-center">
+                                    <a href="#" class="auth-link text-black">Lupa password?</a>
+                                </div>
+                                <div class="my-2 d-flex justify-content-between align-items-center mt-3">
+                                    <a class="btn btn-block btn-primary btn-lg font-weight-medium
+                                    font-w= auth-form-btn"  (click) = "login()"
+                                    >Masuk</a>
+                                    <a class="btn btn-block btn-dark btn-lg font-weight-medium auth-form-btn" href="#">Cancel</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+
+   

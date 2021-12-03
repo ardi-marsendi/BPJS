@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+nav ol li a {
+  font-weight: 500;
+  color: green;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sidebar ul li a {
+  color: black;
+}
+
+footer span {
+  display: none;
+}
